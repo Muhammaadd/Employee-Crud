@@ -1,0 +1,67 @@
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\appsettings.Development.json
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\appsettings.json
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\MEGZ Web Api.exe
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\MEGZ Web Api.deps.json
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\MEGZ Web Api.runtimeconfig.json
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\MEGZ Web Api.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\MEGZ Web Api.pdb
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Humanizer.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.csproj.AssemblyReference.cache
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.AssemblyInfoInputs.cache
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.AssemblyInfo.cs
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.csproj.CoreCompileInputs.cache
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.MvcApplicationPartsAssemblyInfo.cs
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.MvcApplicationPartsAssemblyInfo.cache
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\staticwebassets.build.json
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\staticwebassets.development.json
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\scopedcss\bundle\MEGZ Web Api.styles.css
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.csproj.CopyComplete
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\refint\MEGZ Web Api.dll
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.pdb
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\MEGZ Web Api.genruntimeconfig.cache
+E:\Mini System Using Angular and Web Api\MEGZ Web Api\MEGZ Web Api\obj\Debug\net6.0\ref\MEGZ Web Api.dll
