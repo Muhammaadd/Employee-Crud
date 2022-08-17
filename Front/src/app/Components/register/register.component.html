@@ -1,0 +1,70 @@
+<section class="bg-image"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img7.webp');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container  h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Hr System Sign Up</h2>
+              <form #registerForm="ngForm" (ngSubmit)="register()" >
+                <div class="form-outline mb-4">
+                  <input  [(ngModel)]="userRegister.Name" #name="ngModel"   required minlength="10" name="Name" placeholder="Name" type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                </div>
+                <div *ngIf="name.touched">
+                  <div *ngIf="name?.errors?.['required']" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">Please fill this field</div>
+                  <div *ngIf="name?.errors?.['minlength']" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">minimum length of the name is 10</div>
+                </div>
+                <div *ngIf="errors?.errors?.Name" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">{{errors.Name}}</div>
+                <div class="form-outline mb-4">
+                  <input (focus)="setError(1)" [(ngModel)]="userRegister.Email" #email="ngModel"  required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"  name="Email"  placeholder="Email address" type="email" id="email" class="form-control form-control-lg" />
+                </div>
+                <div *ngIf="email.touched">
+                  <div *ngIf="email?.errors?.['required']" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">Please fill this field</div>
+                  <div *ngIf="email?.errors?.['pattern']" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">Email must be like: characters@characters.domain</div>
+                </div>
+                <div *ngIf="errors?.errors?.Email" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">{{errors.Email}}</div>
+                <div *ngIf="errors==='This email already taken'" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">{{errors}}</div>
+                <div class="form-outline mb-4">
+                  <input  [(ngModel)]="userRegister.Password" #password="ngModel"  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="Password" placeholder="Password" type="password" id="password" class="form-control form-control-lg" />
+                </div>
+                <div *ngIf="password.touched">
+                  <div *ngIf="password?.errors?.['required']" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">Please fill this field</div>
+                  <div *ngIf="password?.errors?.['pattern']" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">Password must contain 8 or more characters and at least one number, and one uppercase and lowercase letter</div>
+                </div>
+                <div *ngIf="errors?.errors?.Password" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">{{errors.Password}}</div>
+                <div class="form-outline mb-4">
+                <input [(ngModel)]="userRegister.ConfirmPassword" #confirm="ngModel" required pattern="{{password.value}}" name="ConfirmPassword" placeholder="Confirm password" type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                </div>
+                <div *ngIf="confirm.touched">
+                  <div *ngIf="confirm?.errors?.['pattern']||confirm?.errors?.['required']" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">No Matching</div>
+                </div>
+                <div *ngIf="errors?.errors?.ConfirmPassword" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">{{errors.ConfirmPassword}}</div>
+                <div class="form-outline mb-4">
+                  <input (focus)="setError(2)" [(ngModel)]="userRegister.PhoneNumber" #phone="ngModel"  required pattern="01[0-2][0-9]{8}" name="PhoneNumber" placeholder="Phone number" type="tel" id="form3Example4cdg" class="form-control form-control-lg" />
+                </div>
+                <div *ngIf="phone.touched">
+                  <div *ngIf="phone?.errors?.['pattern']" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">Invalid Phone number</div>
+                </div>
+                <div *ngIf="errors?.errors?.PhoneNumber" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">{{errors.PhoneNumber}}</div>
+                <div *ngIf="errors==='This phone number is used'" class="text-start alert alert-warning" style="margin-top:-20px;margin-bottom: 5px;">{{errors}}</div>
+                <div class="form-check d-flex justify-content-center mb-5">
+                  <input  name="agree" [(ngModel)]="agreeStatus" #agree="ngModel"  required class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                  <label class="form-check-label" for="form2Example3g">
+                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                  </label>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <input  type="submit" [disabled]="!registerForm.valid" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" value="Register">
+                </div>
+                <p class="text-center text-muted mt-5 mb-0">Have already an account?
+                  <a routerLink="/login" class="text-dark-50 fw-bold"><u>Login here</u></a></p>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

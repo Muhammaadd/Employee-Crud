@@ -1,0 +1,18 @@
+.borderr{
+  margin: 5px 0 30px;
+  border-bottom: 1px dashed #cfcfcf ;
+}
+form label {
+  text-transform: uppercase;
+}
+.icon i {
+  font-size: 1.3em;
+}
+.cancel-anchor{
+  background-color: #ff4961;
+  outline: none;
+}
+.save-btn{
+  background-color: #28d094;
+  outline: none;
+}

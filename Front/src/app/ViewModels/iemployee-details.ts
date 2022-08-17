@@ -1,0 +1,19 @@
+export interface IEmployeeDetails {
+email?:string,
+phone?:string,
+id?:number,
+name?:string,
+nationality?:string,
+ssn?:string,
+address?:string,
+date:Date,
+profile?:string
+gender?:string,
+bonus?:number,
+discount?:number,
+checkIn:string,
+checkOut:string,
+hiredate:Date,
+salary?:number,
+Department_Id?:number
+}

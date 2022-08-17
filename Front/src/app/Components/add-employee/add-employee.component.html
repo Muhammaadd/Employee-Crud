@@ -1,0 +1,226 @@
+<div class="mainContent p-5 container col-12 offset-xl-2 col-xl-10">
+  <h2 class="mb-3">Add Employee Form</h2>
+  <div class="form p-5 bg-white rounded-3">
+    <h2 class="mb-4">Employee Information</h2>
+    <div class="icon d-flex align-items-center">
+      <i class="far fa-user-circle"></i>
+      <p class="ms-2 fs-4">Personal Details</p>
+    </div>
+    <div class="borderr"></div>
+    <form #addEmployeeForm="ngForm" (ngSubmit)="addEmployee()">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input required minlength="10" [(ngModel)]="employee.Name" #Name="ngModel" name="Name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div *ngIf="Name.touched">
+        <div *ngIf="Name?.errors?.['required']" class="alert alert-warning">
+          Name is required
+        </div>
+        <div *ngIf="Name?.errors?.['minlength']" class="alert alert-warning">
+          Minimum length for the name is 10
+        </div>
+      </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Name">{{errorsList?.Name}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Address</label>
+        <input required minlength="10" [(ngModel)]="employee.Address" #Address="ngModel" name="Address" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="Address.touched">
+          <div *ngIf="Address?.errors?.['required']" class="alert alert-warning">
+            Address is required
+          </div>
+          <div *ngIf="Address?.errors?.['minlength']" class="alert alert-warning">
+            Minimum length for the address is 10
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Address">{{errorsList?.Address}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+        <input required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" [(ngModel)]="employee.Email" #Email="ngModel" name="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="Email.touched">
+          <div *ngIf="Email?.errors?.['required']" class="alert alert-warning">
+            Email is required
+          </div>
+          <div *ngIf="Email?.errors?.['pattern']" class="alert alert-warning">
+            Invalid Email Adress
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Email">{{errorsList?.Email}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Contact Number</label>
+        <input required pattern="01[0125]{1}[0-9]{8}" [(ngModel)]="employee.Phone" #ContactNumber="ngModel" name="ContactNumber" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="ContactNumber.touched">
+          <div *ngIf="ContactNumber?.errors?.['required']" class="alert alert-warning">
+            Contact number is required
+          </div>
+          <div *ngIf="ContactNumber?.errors?.['pattern']" class="alert alert-warning">
+            Invalid Contact number
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Phone">{{errorsList?.Phone}}</div>
+      </div>
+      <div class="icon mt-5 d-flex align-items-center">
+        <i class="far fa-address-card"></i>
+        <p class="ms-2 fs-4">Other Details</p>
+      </div>
+      <div class="borderr mb-5"></div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Date</label>
+        <input required [(ngModel)]="employee.Date" #Date="ngModel" name="Date" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="Date.touched">
+          <div *ngIf="Date?.errors?.['required']" class="alert alert-warning">
+            Birth Date is required
+          </div>
+          <div *ngIf="birthDateStatus" class="alert alert-warning">
+            Invalid Date
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Date">{{errorsList?.Date}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Gender</label>
+        <select required [(ngModel)]="employee.Gender" #Gender="ngModel" name="Gender" class="form-select" aria-label="Default select example">
+          <option value="0" selected>Select your gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <div *ngIf="Gender.touched">
+          <div *ngIf="Gender?.errors?.['required']||genderStatus||Gender.value==='0'" class="alert alert-warning">
+            You must select your gender
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Gender">{{errorsList?.Gender}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">date of contract</label>
+        <input required  [(ngModel)]="employee.HireDate" #DateOfContract="ngModel" name="DateOfContract" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="DateOfContract.touched">
+          <div *ngIf="DateOfContract?.errors?.['required']" class="alert alert-warning">
+            Date of Contract is required
+          </div>
+          <div *ngIf="hireDateStatus" class="alert alert-warning">
+            Invalid Date
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.HireDate">{{errorsList?.HireDate}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Start Time</label>
+        <input required [(ngModel)]="employee.CheckIn" #Start="ngModel" name="Start" type="time" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="Start.touched">
+          <div *ngIf="Start?.errors?.['required']" class="alert alert-warning">
+            Start Time is required
+          </div>
+          <div *ngIf="startTimeStatus" class="alert alert-warning">
+            Invalid time
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.CheckIn">{{errorsList?.CheckIn}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">End Time</label>
+        <input required="" [(ngModel)]="employee.CheckOut" #End="ngModel" name="End" type="time" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="End.touched">
+          <div *ngIf="End?.errors?.['required']" class="alert alert-warning">
+            End Time is required
+          </div>
+          <div *ngIf="endTimeStatus" class="alert alert-warning">
+            Invalid time
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.CheckOut">{{errorsList?.CheckOut}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Salary</label>
+        <input required min="4000" max="35000" [(ngModel)]="employee.Salary" #Salary="ngModel" name="Salary" type="number" placeholder="Budget" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="Salary.touched">
+          <div *ngIf="Salary?.errors?.['required']" class="alert alert-warning">
+            Salary is required
+          </div>
+          <div *ngIf="Salary?.errors?.['min'] || Salary?.errors?.['max']" class="alert alert-warning">
+            Salary must be between this range [4000-35000]
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Salary">{{errorsList?.Salary}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Bonus</label>
+        <input required min="1" max="4" [(ngModel)]="employee.Bonus" #Bonus="ngModel" name="Bonus" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="Bonus.touched">
+          <div *ngIf="Bonus?.errors?.['required']" class="alert alert-warning">
+            Bouns is required
+          </div>
+          <div *ngIf="Bonus?.errors?.['min']||Bonus?.errors?.['max']" class="alert alert-warning">
+            Bouns must be between this range [1-4]
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Bonus">{{errorsList?.Bonus}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">discount</label>
+        <input required min="1" max="4" [(ngModel)]="employee.Discount" #Discount="ngModel" name="Discount" type="number"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="Discount.touched">
+          <div *ngIf="Discount?.errors?.['required']" class="alert alert-warning">
+            Discount is required
+          </div>
+          <div *ngIf="Discount?.errors?.['min']||Discount?.errors?.['max']" class="alert alert-warning">
+            Discount must be between this range [1-4]
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Discount">{{errorsList?.Discount}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">National ID</label>
+        <input required pattern="[0-9]{14}" minlength="14" maxlength="14" [(ngModel)]="employee.SSN" #NationalId="ngModel" name="NationalId" type="text" class="form-control" id="exampleInputPassword1">
+        <div *ngIf="NationalId.touched">
+          <div *ngIf="NationalId?.errors?.['required']" class="alert alert-warning">
+            National ID is required
+          </div>
+          <div *ngIf="NationalId?.errors?.['pattern']" class="alert alert-warning">
+            Invalid National ID
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.SSN">{{errorsList?.SSN}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nationality</label>
+        <select required [(ngModel)]="employee.Nationality" #Nationality="ngModel" name="Nationality" class="form-select" aria-label="Default select example">
+          <option  value="Egypt" selected>Egypt</option>
+        </select>
+        <div *ngIf="Nationality.touched">
+          <div *ngIf="Nationality?.errors?.['required']" class="alert alert-warning">
+            National ID is required
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Nationality">{{errorsList?.Nationality}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Department</label>
+        <select required  [(ngModel)]="employee.Department_Id" #Department="ngModel" name="Department" class="form-select" aria-label="Default select example">
+          <option *ngFor="let department of departmentsList" value="{{department.id}}" >{{department.name}}</option>
+        </select>
+        <div *ngIf="Department.touched">
+          <div *ngIf="Department?.errors?.['required']" class="alert alert-warning">
+            Department is required
+          </div>
+        </div>
+      <div class="alert alert-warning" *ngIf="errorsList?.Department_Id">{{errorsList?.Department_Id}}</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Profile</label>
+        <input [(ngModel)]="employee.Profile" #Profile="ngModel" name="Profile" type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="form-actions">
+        <a>
+        <button type="button" class="btn btn-danger cancel-anchor mr-1">
+          Cancel<i class="ms-2 fa fa-close"></i>
+        </button>
+        </a>
+        <button [disabled]="!addEmployeeForm.valid" type="submit" class="btn btn-success save-btn ms-3">
+          Save<i class="ms-2 fa fa-save"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

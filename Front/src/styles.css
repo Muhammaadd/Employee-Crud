@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+a:hover{
+  color: white;
+}
+.mainContent {
+  min-height:100vh ;
+  background-color: #ececec;
+}
+.save-btn{
+  background-color: #28d094;
+  outline: none;
+}

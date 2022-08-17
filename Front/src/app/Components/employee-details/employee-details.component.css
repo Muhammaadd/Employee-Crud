@@ -1,0 +1,15 @@
+.left-content img {
+  border: 2px solid black;
+}
+.left-content .text-primary{
+  background-color: rgba(235, 235, 235, 0.867);
+  border-radius: 25px;
+  font-weight: 700;
+}
+.field{
+  background-color: rgba(235, 235, 235, 0.867);
+}
+.single-row .field{
+  width: 48%;
+}
+
